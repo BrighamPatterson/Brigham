@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brigham Patterson Campaign</title>
     <style>
-        body {
+body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
@@ -22,7 +22,7 @@
         nav {
             display: flex;
             justify-content: center;
-            background-color: #FFFFF;
+            background-color: #FFFFFF;
             position: sticky;
             top: 0;
             z-index: 1000;
@@ -109,13 +109,72 @@
         section {
             padding: 50px 0;
         }
-	.banner-image img {
-    width: 100%;
-    max-width: 2000px;
-    height: auto; /* Maintains the aspect ratio */
-    display: block;
-    margin: 0 auto; /* Centers the image */
-}
+
+        .banner-image img {
+            width: 100%;
+            max-width: 2000px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* Mobile Responsive Styles */
+        @media screen and (max-width: 768px) {
+            nav a {
+                padding: 10px;
+                font-size: 0.9em;
+            }
+
+            .main-section {
+                padding: 20px;
+            }
+
+            .issues {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .issue {
+                width: 90%;
+                margin-bottom: 20px;
+            }
+
+            .endorser img {
+                width: 120px;
+                height: 120px;
+            }
+
+            footer {
+                padding: 15px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            header {
+                padding: 15px;
+                font-size: 1.5em;
+            }
+
+            nav a {
+                padding: 8px;
+                font-size: 0.8em;
+            }
+
+            .issue {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .banner-image img {
+                max-width: 100%;
+                height: auto;
+            }
+
+            footer {
+                font-size: 0.8em;
+                padding: 10px;
+            }
+        }
 
     </style>
     <script>
@@ -140,7 +199,7 @@
 </nav>
 
 <div class="banner">
-    <h1>Fighting for the Draper Stakes Future</h1>
+    <h1>Fighting for the Draper YSA</h1>
 </div>
 
 <section id="priorities" class="main-section">
@@ -156,7 +215,7 @@
         </div>
         <div class="issue">
             <h3>Relief Society</h3>
-            <p>With a clear vision for the Draper Stake, Brigham will support the Relief Society, keep , and create jobs in local communities.</p>
+            <p>With a clear vision for the Draper Stake, Brigham will support the beautiful women in their efforts</p>
         </div>
     </div>
 </section>
@@ -180,7 +239,7 @@
     <div class="endorser">
         <img src="endorser1.jpg" alt="Endorser 1">
         <h4>Tyson Brown</h4>
-        <p>"Brigham Patterson is the right choice for Utah's future. His leadership is exactly what we need in these challenging times."</p>
+        <p>"Brigham Patterson is the right choice for the Draper YSA's future. His leadership is exactly what we need in these challenging times."</p>
     </div>
     <div class="endorser">
         <img src="endorser2.jpg" alt="Endorser 2">
