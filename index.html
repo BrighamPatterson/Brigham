@@ -1,0 +1,223 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brigham Patterson Campaign</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #B22222;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #FFFFF;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            color: #8B0000;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        nav a:hover {
+            background-color: #a80000;
+        }
+        .banner {
+            background-image: url('placeholder.jpeg');
+            height: 300px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+        .banner h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 3em;
+        }
+        .main-section {
+            padding: 50px;
+            text-align: center;
+        }
+        .issues {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 50px;
+        }
+        .issue {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 30%;
+        }
+        .issue h3 {
+            color: #B22222;
+        }
+        .endorsements {
+            background-color: #f1f1f1;
+            padding: 50px;
+            text-align: center;
+        }
+        .endorsements h2 {
+            color: #B22222;
+            margin-bottom: 40px;
+        }
+        .endorser {
+            margin-bottom: 30px;
+        }
+        .endorser img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+        .endorser h4 {
+            margin-top: 10px;
+            color: #B22222;
+        }
+        .endorser p {
+            font-style: italic;
+            color: #333;
+            max-width: 600px;
+            margin: 10px auto;
+        }
+        footer {
+            background-color: #8B0000;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        section {
+            padding: 50px 0;
+        }
+	.banner-image img {
+    width: 100%;
+    max-width: 2000px;
+    height: auto; /* Maintains the aspect ratio */
+    display: block;
+    margin: 0 auto; /* Centers the image */
+}
+
+    </style>
+    <script>
+        // Smooth scroll functionality for the navbar
+        function scrollToSection(id) {
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</head>
+<body>
+
+<div class="banner-image">
+    <img src="your-banner-image.png" alt="Brigham Patterson for High Council">
+</div>
+
+<nav>
+    <a onclick="scrollToSection('priorities')">Priorities</a>
+    <a onclick="scrollToSection('community')">Community Involvement</a>
+    <a onclick="scrollToSection('meet')">Meet Brigham</a>
+    <a onclick="scrollToSection('endorsements')">Endorsements</a>
+    <a onclick="scrollToSection('contact')">Contact</a>
+</nav>
+
+<div class="banner">
+    <h1>Fighting for the Draper Stakes Future</h1>
+</div>
+
+<section id="priorities" class="main-section">
+    <h2>Brigham on the Issues</h2>
+    <div class="issues">
+        <div class="issue">
+            <h3>Willow Creek</h3>
+            <p>Brigham is committed to addressing the attendance of Willow Creek and making sure everyone is welcome.</p>
+        </div>
+        <div class="issue">
+            <h3>Elders Quorum</h3>
+            <p>Believing in a future-driven education system, Brigham will push for policies that improve the Elders Quorum success and empower teachers.</p>
+        </div>
+        <div class="issue">
+            <h3>Relief Society</h3>
+            <p>With a clear vision for the Draper Stake, Brigham will support the Relief Society, keep , and create jobs in local communities.</p>
+        </div>
+    </div>
+</section>
+
+<section id="community">
+    <div class="main-section">
+        <h2>Community Involvement</h2>
+        <p>Brigham has always been active in supporting local communities, organizing events, and working with local leaders to make a difference.</p>
+    </div>
+</section>
+
+<section id="meet">
+    <div class="main-section">
+        <h2>Meet Brigham Patterson</h2>
+        <p>Learn more about Brigham's journey, his vision for Utah, and his dedication to public service.</p>
+    </div>
+</section>
+
+<section id="endorsements" class="endorsements">
+    <h2>Board of Trustees</h2>
+    <div class="endorser">
+        <img src="endorser1.jpg" alt="Endorser 1">
+        <h4>Tyson Brown</h4>
+        <p>"Brigham Patterson is the right choice for Utah's future. His leadership is exactly what we need in these challenging times."</p>
+    </div>
+    <div class="endorser">
+        <img src="endorser2.jpg" alt="Endorser 2">
+        <h4>Ronin Taylor</h4>
+        <p>"Honor, that is what comes to mind when I think of Brigham. The man is the emblem of Justice and equality."</p>
+    </div>
+    <div class="endorser">
+        <img src="endorser3.jpg" alt="Endorser 3">
+        <h4>Cade Jackman</h4>
+        <p>"Brigham is super sexy and obviously the correct candidate for High Council"</p>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="main-section">
+        <h2>Contact</h2>
+        <p>Reach out to the campaign to learn more or get involved in Brigham's vision for the Draper Stake.</p>
+    </div>
+</section>
+
+<footer>
+    <p>Connect with us on social media: 
+        <a href="https://www.instagram.com/b_ham_pat?igsh=eHdtdjVodWo2ZDB3" target="_blank">
+            <i class="fab fa-instagram"></i>
+        </a>
+    </p>
+</footer>
+
+<style>
+    footer a i {
+        color: white;
+    }
+    footer a:hover i {
+        color: #dcdcdc; /* Optional hover effect */
+    }
+</style>
+
+
+</body>
+</html>
